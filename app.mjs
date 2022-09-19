@@ -14,4 +14,4 @@ app.get('/', async (_req, res) => {
   }
 });
 
-app.listen(1234, () => console.log('UP & RUNNING'));
+app.listen(parseInt(process.env.PORT ?? "1234"), () => console.log('UP & RUNNING'));
