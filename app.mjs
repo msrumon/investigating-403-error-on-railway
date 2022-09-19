@@ -8,6 +8,7 @@ app.get('/', async (_req, res) => {
     const { data, status } = await axios.get('/config.json', { baseURL: 'https://cst-ssc.apps.cic.gc.ca' });
     res.status(status).json({ status, data });
   } catch (error) {
+    console.error(JSON.stringify({ error }));
     const { data, status } = error.response;
     res.status(status).json({ status, data });
   }
