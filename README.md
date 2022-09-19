@@ -1,3 +1,3 @@
 # 403 Error on Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/1HnHju?referralCode=8PRXig)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Gp6T2a?referralCode=8PRXig)
