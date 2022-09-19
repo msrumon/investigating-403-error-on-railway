@@ -1,6 +1,8 @@
 import axios from 'axios';
 import express from 'express';
 
+const { PORT } = process.env;
+
 const app = express();
 
 app.get('/', async (_req, res) => {
@@ -14,4 +16,4 @@ app.get('/', async (_req, res) => {
   }
 });
 
-app.listen(parseInt(process.env.PORT ?? "1234"), () => console.log('UP & RUNNING'));
+app.listen(PORT, () => console.log(`UP & RUNNING ON "${PORT}"`));

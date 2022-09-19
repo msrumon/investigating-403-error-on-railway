@@ -20,7 +20,9 @@ COPY --chown=node ./app.mjs ./
 
 RUN npm prune
 
-EXPOSE 1234
+ENV PORT 1234
+
+EXPOSE ${PORT}
 
 USER node
 

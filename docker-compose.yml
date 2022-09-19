@@ -4,6 +4,8 @@ services:
     working_dir: /tmp/app
     volumes:
       - .:/tmp/app:rw
+    environment:
+      PORT: 1234
     ports:
       - 80:1234
     command:
